@@ -1,0 +1,33 @@
+name: CICD Pipeline
+
+on:
+  wworkflow_dispatch
+
+jobs: 
+  code:
+    
+      runs-on: ubuntu-latest
+      steps:
+      - name : Code is fetched from repo
+        run: echo "code runs successfully"
+
+   build:
+    
+      runs-on: ubuntu-latest
+      steps:
+      - name : Build is performed
+        run: echo "Build runs successfully"
+
+    test:
+      
+      runs-on: ubuntu-latest
+      steps:
+      - name : Test is performed
+        run: echo "Test performed successfully"
+
+    deploy:
+    
+      runs-on : ubuntu-latest
+      steps:
+      - name: deployment successfully
+        run: echo "Docker file deployed"
