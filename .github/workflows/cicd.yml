@@ -13,21 +13,21 @@ jobs:
 
  
   build:
-    
+      needs : [code]
       runs-on: ubuntu-latest
       steps:
       - name : Build is performed
         run: echo "Build runs successfully"
 
   test:
-      
+      needs : [build]
       runs-on: ubuntu-latest
       steps:
       - name : Test is performed
         run: echo "Test performed successfully"
 
   deploy:
-    
+      needs : [test]
       runs-on : ubuntu-latest
       steps:
       - name: deployment successfully
