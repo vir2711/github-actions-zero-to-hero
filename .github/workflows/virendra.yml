@@ -13,3 +13,11 @@ jobs:
 
       - name: dosto
         run: echo "Hello $USER"
+
+  mazedar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: version of docker and python
+        run: echo "docker --version && python --version" 
+      
