@@ -19,5 +19,5 @@ jobs:
 
     steps:
       - name: version of docker and python
-        run: echo "docker --version && python --version" 
+        run: docker --version && python --version 
       
