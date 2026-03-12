@@ -11,21 +11,22 @@ jobs:
       - name : Code is fetched from repo
         run: echo "code runs successfully"
 
-   build:
+ 
+  build:
     
       runs-on: ubuntu-latest
       steps:
       - name : Build is performed
         run: echo "Build runs successfully"
 
-    test:
+  test:
       
       runs-on: ubuntu-latest
       steps:
       - name : Test is performed
         run: echo "Test performed successfully"
 
-    deploy:
+  deploy:
     
       runs-on : ubuntu-latest
       steps:
